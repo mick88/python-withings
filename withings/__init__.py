@@ -78,7 +78,7 @@ class WithingsError(Exception):
 
 
 class WithingsAuth(object):
-    URL = 'https://oauth.withings.com/account'
+    URL = 'https://developer.health.nokia.com/account'
 
     def __init__(self, consumer_key, consumer_secret, callback_uri=None):
         self.consumer_key = consumer_key
