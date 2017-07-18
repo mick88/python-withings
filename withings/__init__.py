@@ -5,7 +5,7 @@ Python library for the Withings API
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Withings Body metrics Services API
-<http://www.withings.com/en/api/wbsapiv2>
+<https://developer.health.nokia.com/api>
 
 Uses Oauth 1.0 to authentify. You need to obtain a consumer key
 and consumer secret from Withings by creating an application
@@ -55,7 +55,7 @@ class WithingsCredentials(object):
 class WithingsError(Exception):
     STATUS_CODES = {
         # Response status codes as defined in documentation
-        # http://oauth.withings.com/api/doc
+        # https://developer.health.nokia.com/api/doc
         0: u"Operation was successful",
         247: u"The userid provided is absent, or incorrect",
         250: u"The provided userid and/or Oauth credentials do not match",
@@ -113,7 +113,7 @@ class WithingsAuth(object):
 
 
 class WithingsApi(object):
-    URL = 'http://wbsapi.withings.net'
+    URL = 'https://api.health.nokia.com'
 
     def __init__(self, credentials):
         self.credentials = credentials
